@@ -6,12 +6,10 @@ print("Welcome to 2D maze! The maze default size is 20x20, for different sizes a
 mazeSize = 20
 
 if (len(sys.argv) > 1):
-    if (isinstance(sys.argv[1], int)):
-        print('entered')
-        mazeSize = sys.argv[1]
+    print(sys.argv)
+    if (isinstance(sys.argv[1], str)): # Not properly error checked entirely! 
+        mazeSize = int(sys.argv[1])
         
-print(mazeSize)
-
 maze = Maze(mazeSize)
 maze.generate_maze()
 maze.print()
