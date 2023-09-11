@@ -1,4 +1,13 @@
 from graph import Graph
+from pathlib import Path
+from pypdf import PdfReader
+
+pdf_path = (
+     Path.home()
+     / "creating-and-modifying-pdfs"
+     / "practice_files"
+     / "Pride_and_Prejudice.pdf"
+ )
 
 class Maze:
     def __init__(self, size):
