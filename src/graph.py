@@ -26,6 +26,33 @@ class Graph:
     def get_spanning_tree(self, start):
         spanning_tree = Graph(self.num_nodes)
         stack = []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         visited = [False]*self.num_nodes
 
         visited[start] = True
