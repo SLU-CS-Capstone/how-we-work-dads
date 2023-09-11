@@ -13,3 +13,5 @@ if (len(sys.argv) > 1):
 maze = Maze(mazeSize)
 maze.generate_maze()
 maze.print()
+
+#duh
